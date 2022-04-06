@@ -34,7 +34,7 @@ export const FoodMap = (props) => {
               <Button 
                 title="Menu"
                 onPress={() => props.navigation.navigate('Menu', {
-                  name: resturant.name,
+                  resturant: resturant,
                 })}/>
             </Callout>
           </Marker>

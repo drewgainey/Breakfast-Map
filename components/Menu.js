@@ -1,10 +1,9 @@
 import { Text, View, Button, ScrollView} from "react-native";
 import { menu } from "../menuExample";
-import MenuSection from "./MenuSection";
 
 export default Menu = ({ route, navigation }) => {
-  const { name } = route.params;
-  const menuDetails = menu.menu;
+  const { resturant } = route.params;
+  const menuDetails = resturant.menus;
   return (
     <ScrollView>
       {menuDetails.map((menu) => {
